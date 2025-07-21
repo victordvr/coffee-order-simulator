@@ -10,6 +10,7 @@ public class Menu {
         options = new HashMap<>();
         options.put(1, new Espresso());
         options.put(2, new Latte());
+        options.put(3, new Cappuccino());
     }
 
     public void display() {
