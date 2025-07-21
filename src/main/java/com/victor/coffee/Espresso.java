@@ -9,6 +9,7 @@ public class Espresso extends Coffee{
 
     @Override
     public void prepare() {
-        System.out.println("Pulling a single shot of espresso...");
+        System.out.println("Preparing a Espresso...");
+        System.out.println("Pulling a single shot of espresso");
     }
 }
