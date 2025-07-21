@@ -9,6 +9,7 @@ public class Menu {
     public Menu() {
         options = new HashMap<>();
         options.put(1, new Espresso());
+        options.put(3, new Cappuccino());
     }
 
     public void display() {

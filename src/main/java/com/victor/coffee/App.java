@@ -12,7 +12,7 @@ public class App {
         Order order = new Order();
         ReceiptManager receiptManager = new ReceiptManager();
 
-        System.out.println("***Welcome to the Coffee Order Machine!***");
+        System.out.println("---Welcome to the Coffee Order Machine!--- Cappuccinos Sale");
 
         boolean running = true;
 
