@@ -25,6 +25,16 @@ mvn exec:java
 mvn test
 ```
 
+### Package App (optional)
+```bash
+mvn package -DskipTests
+```
+- Tests are skipped intentionally due to 3 designed-to-fail unit tests.
+- This will generate a ```.jar``` file under target/. Run it with:
+```bash
+java -jar target/coffee-order-simulator-1.0-SNAPSHOT.jar
+```
+
 ## 🔀 Git Workflow
 Branches include:
 - `develop`, `main`
