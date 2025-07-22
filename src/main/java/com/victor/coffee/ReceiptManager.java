@@ -1,6 +1,8 @@
 package com.victor.coffee;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,6 +43,11 @@ public class ReceiptManager {
 
     public List<String> readAllReceipts() {
         List<String> lines = new ArrayList<>();
+
+        if (!Files.exists(Paths.get(HISTORY_FILE))) {
+            return lines;
+        }
+
         try (BufferedReader reader = new BufferedReader(new FileReader(HISTORY_FILE))) {
             StringBuilder currentReceipt = new StringBuilder();
             String line;
