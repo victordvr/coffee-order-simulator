@@ -13,21 +13,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Compiling code'
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running unit tests'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
 
         stage('Package') {
             steps {
                 echo 'Packaging application'
-                sh 'mvn package'
+                bat 'mvn package'
             }
         }
 
@@ -37,7 +37,7 @@ pipeline {
             }
             steps {
                 echo 'Dockerfile found, so a Docker image will be built (this is an optional step)'
-                sh 'docker build -t coffee-machine-simulator-app .'
+                bat 'docker build -t coffee-machine-simulator-app .'
             }
         }
     }
