@@ -24,10 +24,4 @@ public class LatteTest {
         Latte latte = new Latte();
         assertTrue(latte.getIngredients().contains("Steamed milk with a little foam"));
     }
-
-    @Test
-    public void testLatteHasALittleOfFoam() {
-        Latte latte = new Latte();
-        assertTrue(latte.getIngredients().contains("thick layer of foam"));
-    }
 }
