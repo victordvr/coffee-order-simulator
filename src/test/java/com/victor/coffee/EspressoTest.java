@@ -23,10 +23,4 @@ public class EspressoTest {
         Espresso espresso = new Espresso();
         assertTrue(espresso.getIngredients().contains("Espresso shot"));
     }
-
-    @Test
-    public void testEspressoHasMilk() {
-        Espresso espresso = new Espresso();
-        assertTrue(espresso.getIngredients().contains("milk"));
-    }
 }

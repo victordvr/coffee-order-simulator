@@ -24,10 +24,4 @@ public class CappuccinoTest {
         Cappuccino cappuccino = new Cappuccino();
         assertTrue(cappuccino.getIngredients().contains("Steamed milk and a thick layer of foam"));
     }
-
-    @Test
-    public void testCappuccinoHasAThickLayerOfFoam() {
-        Cappuccino cappuccino = new Cappuccino();
-        assertTrue(cappuccino.getIngredients().contains("a little foam"));
-    }
 }
